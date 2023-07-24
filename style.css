@@ -1,0 +1,320 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* Global Styles */
+
+* {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body { 
+  padding: px 0%;
+  background: #ffffff;
+}
+
+a{
+  text-decoration: none;
+}
+
+/* Container Styles */
+.container {
+  display: flex;
+  height: 89vh;
+}
+.main-wrapper{
+
+  flex: 2;  overflow-y: none;
+}
+.side-bar{
+  background: #faf9f9;
+  flex: .3;
+  padding: 40px;
+  /* background-color: white; */
+}
+
+.side-bar ul{
+  padding: 0 40px;
+  list-style: none;
+}
+
+.side-bar{
+  background: rgb(230, 230, 231);
+}
+
+
+@media only screen and (max-width: 900px) {
+  .container {
+    flex-direction: column;
+  }
+  .side-bar{
+    background: #114;
+    color: white !important;
+  }
+  .side-bar a{
+    color: white !important;
+  }
+}
+
+/* Navigation Menu Styles */
+
+nav.nav-menu {
+  width: 100%;
+  background-color:#1a1a1a;
+  padding: 0px;
+  
+}
+
+nav.nav-menu ul {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  font-size: clamp(.8rem, 1.2vw, 2rem); 
+}
+
+.nav-menu .nav-item {
+  padding: 20px;
+  transition: background-color 500ms ease-in-out;
+  
+}
+
+.nav-menu .nav-item:hover {
+  cursor: pointer;
+  background-color: #000000;
+  
+}
+
+.nav-menu .nav-item a{
+  text-decoration: none;
+  color: #ffffff;
+  
+}
+
+
+/* Main Content Wrapper Styles */
+.main-wrapper {
+  background: white;
+  padding: 0px 0%;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+section.head,
+section.youtube-embed {
+  text-align: center;
+}
+
+
+h1 {
+  font-size: 35px;
+  color: #404040;
+}
+
+h2 {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  text-align: left;
+  font-size: 25px;
+  color: #404040;
+}
+h4 {
+  font-size: 17px;
+  font-weight: bold;
+  color: #000000;
+}
+
+
+h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #000000;
+
+}
+
+ul{
+  padding-left: 30px;
+  
+  }
+  
+  .side ul{
+    text-align: justify;
+    margin-bottom: 10px;
+    line-height: 1.5rem;
+    font-family: "Cormorant SC", sans-serif;
+    font-size:30px;
+
+  }
+
+  ol{
+    padding-left: 40px;
+    }
+    
+    .side ol{
+      text-align: justify;
+      margin-bottom: 10px;
+      line-height: 1.5rem;
+      font-family: "Cormorant SC", sans-serif;
+      font-size:30px;
+  
+    }
+
+p {
+  text-align: justify;
+  margin-bottom: 10px;
+  line-height: 1.5rem;
+}
+
+img {
+  max-width: 100%;
+  float: center;
+  border-radius: 10px;
+  margin: 15px;
+}
+
+.two-col {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.two-col div {
+  width: 100%;
+}
+
+@media only screen and (max-width: 900px) {
+  body {
+    padding: 20%;
+  }
+
+  .two-col {
+    flex-direction: column;
+  }
+
+  .two-col div {
+    width: 100%;
+  }
+
+  .main-wrapper {
+    padding: 5%;
+  }
+}
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("https://02f0a56ef46d93f03c90-22ac5f107621879d5667e0d7ed595bdb.ssl.cf2.rackcdn.com/sites/22857/header_images/222177_original.jpg?1649803981");
+  /* Set a specific height */
+  height: 1000px;
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+/* Place text in the middle of the image */
+.hero-text {
+  text-align: left;
+  position: absolute;
+  top: 40%;
+  left: 30%;
+  transform: translate(-30%, -30%);
+  color: #ffffff(255, 255, 255);
+  font-weight:500;
+  font-size: 16px;
+  width: 100%;
+  padding: 20px;
+}
+.fa {
+  padding: 20px;
+  font-size: 50px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+ background-color: #5d3073;
+ color: #ffffff;
+ border-radius: 100%;
+}
+
+.dropbtn {
+  background-color: #1a1a1a;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #d32326;}
+
+.button {
+  padding: 15px 20px;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #ffffff;
+  background-color: #1a1a1a;
+  border: none;
+  border-radius: 0px;
+  box-shadow: 0 0px #999;
+}
+
+.button:hover {background-color: #d32326}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 0px #666;
+  transform: translateY(4px);
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+a:hover {
+  background-color: #e23a3c;
+  color: rgb(255, 255, 255);
+}
+
+.previous {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+.next {
+  background-color: #d32326;
+  color: white;
+}
+
+.round {
+  border-radius: 50%;
+}
